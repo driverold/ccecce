@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin-left: 20px;
+			}
+			.rotate{
+				transition: all 10s 1s ease-in;
+			}
+			.rotate:hover{
+				transform: rotateZ(720deg);
+			}
+			.skew{
+				transition: all 2.5s 1s ease-in;
+			}
+			.skew:hover{
+				transform:skew(30deg,40deg);
+			}
+			.translate{
+				transition: all 2s 1s ease-in;
+			}
+			.translate:hover{
+				transform:translateY(200px);
+			}
+			.scale{
+				transition: all 2s 1s ease-in;
+			}
+			/*.scale:hover{
+				transform:scale(-1);
+			}
+			.scale1{
+				transition: all 2s 1s ease-in;
+			}*/
+			.scale1:hover{
+				transform:scale(-1);
+			}
+			.scale2{
+				transition: all 2s 1s ease-in;
+			}
+			.scale2:hover{
+				transform:scaleX(-1);
+			}
+			.scale3{
+				transition: all 2s 1s ease-in;
+			}
+			.scale3:hover{
+				transform:scale(1,2);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="rotate">
+			rotate
+		</div>
+		<div class="skew">skew</div>
+		<div class="translate">translate</div>
+		<div class="scale"><img src="img/bu_06.png"/></div>
+		<div class="scale1"><img src="img/bu_06.png"/></div>
+		<div class="scale2"><img src="img/bu_06.png"/></div>
+		<div class="scale3"><img src="img/bu_06.png"/></div>
+	</body>
+</html>

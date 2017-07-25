@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		input的类型
+		
+		<input type="text" />文本框
+		<input type="password" />密码框/不显示所输入的内容。
+		<input type="checkbox"/>复选框／多选框
+		<input type="radio" />单选框／保证name相同时可以实现单选
+		
+		<input type="image"/>图片
+		<input type="submit"/>提交
+		<input type="file"/>文件上传
+		<input type="reset" />重置按钮
+		<input type="button"/>普通按钮
+		<input type="hidden"/>隐藏
+		
+		<textarea name="" rows="" cols="">文本域</textarea>
+		
+		<select name="">
+			<option value="">下拉列表</option>
+		</select>
+		
+		-------------------------------------------------
+		<!--action：表单内容的提交方法。
+		
+		method="post／get"：提交方式。post：密文提交，更安全，提交的文件或者表单，是没有大小限制
+		 							  get：直接提交  是有大小限制的。
+		 							  
+		H5中新增的type类型：-->
+		<form action="" method="post">
+			<!--电子邮件：<input type="email"/>。会验证，@以及@后边跟的地址是否存在或者正确。-->
+			<!--URL:<input type="url"/>http:// 以及.com/.cn ....-->
+			<!--数字：<input min="18" max="90" step="5" type="number" />min="18" 最小值max="90"最大值 step="5"步长-->
+			<!--RANGE：<input type="range" min="0" max="100" step="10" />,模拟一个音量调节。-->
+			<!--<input type="tel" />电话；电脑上是不能模拟的。-->
+			<!--选取颜色：<input type="color" />-->
+			
+		   -----------------------------------------------------
+			<!--时间：<input type="date" />可以选择年／月／日-->
+			<!--月份:<input type="month" /> 年／月-->
+			<!--周：<input type="week" /> 年／第几周-->
+			<!--<input type="datetime-local"/>年月日，上午／下午：时／分-->
+			------------------------
+			新增的表单属性：
+			autofocus：自动聚焦：可以直接加 autofocus；
+			placeholder文本提示，输入内容后自动消失，删除内容后自动出现
+			required:非空验证。
+			<input type="submit" value="提交"/>
+		</form>
+		
+		
+	</body>
+</html>

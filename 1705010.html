@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>移动端布局</title>
+	</head>
+	<body>
+		px，            			 em,                                 deg,
+		像素       		根据父元素的字体大小定义的单位					角度
+		PC 页面			使用时必须要定义父元素的字体大小
+		照片              比较麻烦，
+		明确的数值  
+	--------------------------------------	
+		REM ：是CSS3新增的一个相对单位
+	   （root em，即根em）
+		REM是相对单位，是相对HTML根元素。 
+		
+		
+		rem的换算：
+		
+		1.拿到设计图后，首先要测量设计图的宽度。
+		2.用设计图的宽度替换clientwidth 然后就求商。相除得到的结果 X  这个值不能小于12。
+		3.用设计图中任意某个位置所量取到的具体大小（px）／X=这个位置的rem值。
+		
+<script> 
+window.onload = function() {   
+     document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';        
+window.onresize = function() {            
+     document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';        };
+ };
+ </script>
+
+第一点：因为现在我们用的智能手机（iOS，Android）的浏览器都是基于webkit内核，这里有一些针对webkit的特殊meta标签，在开 发移动端web是起到很重要的作用： <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；
+<meta content="telephone=no" name="format-detection"> 告诉设备忽略将页面中的数字识别为电话号码
+width [pixel_value | device-height]当前设备宽度
+height [pixel_value | device-height]当前设备高度
+user-scalable 是否允许缩放 （no||yes）
+initial-scale 初始比例
+minimum-scale 允许缩放的最小比例
+maximum-scale 允许缩放的最大比例
+第二点：HTML5标签的使用 可以减少开发者很多的工作量，当然了你决定使用HTML5前，一定要对此非常熟悉，要知道HTML5的新标签的作用。比如定义一块内容 或文章区域可使用section标签，定义导航条或选项卡可以直接使用nav标签等等。
+
+
+因为在移动端的浏览器中webkit内核的比率占了主导地位所以我们可以在移动端开发的时候尽情的使用新增的H5标签以及CSS3的新属性而不需要去考虑它的兼容性问题了。
+
+第三点：放弃CSS float属性——建议
+在项目开发过程中可以会遇到内容排列显示的布局，假如你遇见这样的视觉稿，建议尽量放弃float，可以直接使用display:inline-block;
+第四点：块级化a标签
+请保证将每条数据都放在一个a标签中，为何这样做？因为在触控手机上，为提升用户体验，尽可能的保证用户的可点击区域较大
+	</body>
+</html>

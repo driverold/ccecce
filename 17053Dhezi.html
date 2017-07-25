@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3D盒子</title>
+		<style type="text/css">
+			.warp{
+				width: 900px;
+				height: 900px;
+				background-color: yellow;
+			}
+			.box{
+				position: relative;
+				margin-left: 300px;
+			
+				width: 200px;
+				height: 200px;
+				transform-style: preserve-3d;
+				transition:5s;
+			}
+			.box:hover{
+				transform: rotateX(360deg) rotateY(360deg);
+			}
+			.box div{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 200px;
+				height: 200px;
+				/*border: 1px solid #000000;*/
+				opacity: 0.5;
+			}
+			.box div:nth-child(1){
+				transform: translateZ(100px);
+				background-color: red;
+			}
+			.box div:nth-child(2){
+				transform: translateZ(-100px);
+				background-color: orange;
+			}
+			.box div:nth-child(3){
+				transform: rotateY(90deg) translateZ(100px);
+				background-color: blue;
+			}
+			.box div:nth-child(4){
+				transform: rotateY(-90deg) translateZ(100px);
+				background-color: green;
+			}
+			.box div:nth-child(5){
+				transform: rotateX(90deg) translateZ(100px);
+				background-color: purple;
+			}
+			.box div:nth-child(6){
+				transform: rotateX(-90deg) translateZ(100px);
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="warp">
+			<div class="box">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+			</div>
+		</div>
+	</body>
+</html>

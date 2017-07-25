@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多列布局</title>
+		<style type="text/css">
+			.clo{
+				column-count: 4;/*栏目数*/
+				/*column-width:100px 栏目的宽度来*/
+				column-gap:10px; /*栏目之间的距离*/
+				column-rule: 2px dotted green;/*栏目之间的间隔线*/
+			}
+			.clo h2{
+				column-span:all;/*是否跨列显示*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="clo">
+			<h2>这是一个标题</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto molestias mollitia quas quae nobis modi iste tenetur odio temporibus eius non dolores dolore aliquam nam exercitationem quis nemo reiciendis?
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!!DOCTYPE hhtml></html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			#huandog{
+				width: 500px;
+			}
+			#huandog div{
+				width: 85px;
+				height: 25px;
+				background-color: orange;
+				margin-bottom: 10px;
+				text-align: center;
+				line-height: 25px;
+			}
+			#huandog:hover div{
+				width: 480px;
+			}
+			#huandog .ease{
+				transition: all 2s 1s ease;
+			}
+			#huandog .linear{
+				transition: all 2s 1s linear;
+			}
+			#huandog .ease-in{
+				transition: all 2s 1s ease-in;
+			}
+			#huandog .ease-out{
+				transition:  all 2s 1s ease-out ;
+			}
+			#huandog .ease-in-out{
+				transition:  all 2s 1s ease-in-out ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="huandog">
+			<div class="ease">ease</div>
+			<div class="linear">linear</div>
+			<div class="ease-in">ease-in</div>
+			<div class="ease-out">ease-out</div>
+			<div class="ease-in-out">ease-in-out</div>
+		</div>
+	</body>
+</html>

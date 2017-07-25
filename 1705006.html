@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒子阴影</title>
+	</head>
+	<body>
+		阴影的属性： X轴偏移，Y轴偏移，模糊的距离，阴影的大小，阴影的颜色。
+		三个值就可以出现阴影的效果。
+		盒子内阴影：
+		阴影的属性： X轴偏移，Y轴偏移，模糊的距离，阴影的大小，阴影的颜色 inset(盒子内阴影)。
+		box-shadow：
+		盒子阴影的大小不会影响到盒子的大小。
+		盒子多阴影：box-shadow: 0px -10px 5px  red,10px 0px 5px 5px blue,0px 10px 5px 5px purple,-10px 0px 5px 5px green;
+		---------------------------------
+		
+		盒子的总宽度=外边距（margin）+边框（border）+内边距（padding）+宽度（width）
+		盒子的总高度=外边距（margin）+边框（border）+内边距（padding）+高度（height）
+		border和padding计算入width之内，其实就是怪异模式:
+		box-sizing: border-box;(一般情况下我们在移动端使用)
+		
+		-------------------
+		CSS text 属性
+
+		一、text-align： left(左对齐)
+					 center(居中)
+					 right(右对齐)
+					 justify（两端对齐）
+		二. 行高: line-height
+		
+		1.文本的垂直居中。
+		line-height：文本所在父元素的高度。
+		
+		line-height：行高.每行文本之间的距离。
+		
+		文本缩进：text-indent:2em/字体大小的两倍。
+		三. 垂直对齐: vertical-align:
+			top       靠上对齐
+			middle    居中对齐
+			bottom    靠下对齐
+			
+		四：文本溢出隐藏：
+				text-overflow:ellipsis;文本溢出以省略号形式显示
+				overflow:hidden; 溢出隐藏
+				white-space:nowrap;强制不换行
+	</body>
+</html>

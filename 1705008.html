@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 动画</title>
+	</head>
+	<body>
+		一、过渡。
+		CSS3的过度transition属性是一个复合属性:
+		1. transition-property属性
+		定过渡或动态模拟的CSS属性,简单说就是要改变哪些css的样式
+		2. transition-duration属性
+		transition-duration属性主要用来设置一个属性过渡到另一个属性所需的时间，也就是从旧属性过渡到新属性花费的时间长度，俗称持续时间。
+		
+		3. transition-delay属性
+		延迟时间
+		4. transition-timing-function属性
+		transition-timing-function属性指的是过渡的“缓动函数”。主要用来指定浏览器的过渡速度，以及过渡期间的操作进展情况
+	`	ease.默认值。由慢到快，再由快到慢。
+		linear：匀速运动
+		ease-in：加速效果。
+		ease-out：减速效果。
+		ease-in-out：现加速再减速。
+	二. transform
+		1. transform用在何处?
+		想对一个元素做动画运动的属性,简单说,想写动画先写它!
+		1. 旋转 rotate() 默认沿着Z轴去旋转。 我们可以设定，沿着 X轴和Y轴去转。
+		2. 扭曲skew()
+		扭曲skew()函数能够让元素倾斜显示。它可以将一个对象以其中心位置围绕着X轴和Y轴
+		按照一定的角度倾斜。
+		默认沿着X轴去扭曲
+		3. 位移translate()
+		translate()函数可以将元素向指定的方向移动，
+		类似于position中的relative。或以简单的理解为，使用translate()函数，
+		可以把元素从原来的位置移动，而不影响在X、Y轴上的任何Web组件。
+		默认值是沿着X轴去进行位移。
+		4. 缩放 scale()
+		缩放 scale()函数 让元素根据中心原点对对象进行缩放。
+	</body>
+</html>

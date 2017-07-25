@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文字阴影</title>
+	</head>
+	<body>
+		文字阴影：
+		text-shadow: X轴偏移。Y轴的偏移。模糊距离。阴影的颜色
+		------------------------
+		只有-webkit- 内核的浏览器才支持。
+		1. 文字描边text-stroke
+		text-stroke-width：文字的描边厚度 
+		text-stroke-color：文字的描边颜色 
+		2. 文字的填充text-fill-color
+		取值：就是色值。
+		
+		-------------
+		主流浏览器内核：     
+		IE ：         -MS-
+		
+		chrome:      -webkit-
+		
+		火狐：        -moz-
+		
+		欧朋 ：       -o-
+		---------------------------------------------
+		
+		背景：
+		background:背景。
+		background-color:背景颜色
+						
+		background-image:背景图片
+						url(路径图)
+				-repeat：背景是否重复。默认是重复。no-repeat是不重复	
+				-position：背景定位。  正整数px／em。百分比 center
+				-size：    背景图尺寸，百分比／像素／em大小。
+							cover:（铺满整个容器，效果和100%一样 背景图有可能会超出父容器）
+				            contain:将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内。
+				-attachment：是否滚动。
+					1. fixed
+						背景图像相对于窗体固定。用于body的背景图
+					2. scroll
+						背景图像相对于元素固定，也就是说当元素内容滚动时背景图像不会跟着滚动，
+						因为背景图像总是要跟着元素本身。但会随元素的祖先元素或窗体一起滚动。
+						用于元素的背景图
+		-------------------------------------------
+		css-sprite  精灵图。利用我们的背景定位去做页面上的小图标。
+		根据量取的距离去定位，无论时候，X轴和Y轴的值都是负值。
+		
+		=======================================================
+		渐变：
+		线性渐变：
+			渐变属于：background。
+					linear-gradient(to right,yellow,red);
+								（往哪个方向变，初始颜色，最终颜色）
+								
+					角度：linear-gradient(45deg,yellow,red);
+						角度为负值的时候逆时针转动，正值的时候顺时针转动。
+					repeating-linear-gradient(to right,yellow 10px,red 20px)
+					重复线性渐变。
+					新的单位：deg  角度。
+					
+		2. 径向渐变
+			属于背景：background：
+			radial-gradient
+			repeating-radial-gradient(yellow,red,orange,pink);
+			       直接写初始颜色和最终颜色即可，，不需要指定，渐变的方向，但是我们可以指定渐变开始的边
+			       
+			渐变的形状：  circle 圆 | ellipse 椭圆默认情况下是圆
+	</body>
+</html>

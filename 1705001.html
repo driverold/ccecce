@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href=""/>
+	</head>
+	<body>
+		<div class="header"></div>
+			<header>
+				头部
+			</header>
+			<div class="nav"></div>
+			<nav>
+				导航
+			</nav>
+			<div class="footer"></div>
+			<footer>
+				底部
+			</footer>
+			----------
+			便捷的标签书写：
+			H5语义化标签，就是给div了一个定义，也可以说是有意义的div
+			
+			强大的绘画和动画：
+			<canvas>
+				属于H5新增的功能性标签
+				在HTML页面里边定义一块画布
+				通过JS的各种计算。
+			</canvas>
+			更加完善的多媒体支持：
+			<audio src="">音频</audio>
+			<video src="">视频</video>
+			表单的全新功能：
+			<form action="" method="post">
+				<input type="text"/>
+				<input type="date"/>
+				<input type="submit" value=""/>
+			</form>
+			<!-- 本月不涉及到： 本地存储
+			地理定位的API....-->
+		H4:	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+		H5:	<!DOCTYPE html>声明文档类型；相对于HTML4来说要简单
+		H4:<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		H5:<meta charset="UTF-8">设置整个页面的编码格式，UTF-8代表的中文。
+		
+		新增的H5标签：
+		一类：结构性标签 
+			是用来给页面布局。
+			<header>头部
+			<footer>底部
+			<nav>导航
+			<article>文章
+				<section>文章段落
+			<aside> 右边栏
+			<figure>表示一段独立的流内容，一般表示文档主体流内容中的一个独立单元，使用figcaption元素为figure元素组添加标题
+			<mark></mark> 高亮显示，出现黄色背景
+			<meter></meter>度量衡标签
+			<progress></progress> 进度条
+			<time></time>表示日期或时间，也可以同时表示两者
+			带有提示功能的下拉列表
+		<datalist id="abc">
+			<option value="110"/>
+			<option value="119"/>
+			<option value="120"/>
+			<option value="12345"/>
+		</datalist>
+		<input type="text" list="abc" />
+
+		第二类：功能性标签
+			是用来给页面添加一些功能或者效果。
+			<img src="img/log0-bg.jpg"/>
+			<audio loop controls src="img/成都-赵雷.mp3">音频标签</audio>
+		controls： 音频的播放控件，是浏览器自己自带的，所以不同的浏览器的播放控件是不同定的。
+		autoplay： 当页面加载进入后自动播放音频文件，默认是不自动播放。
+		loop：单曲重复。
+		
+		------------
+		<video controls src="img/111.mp4"></video>
+		
+		controls： 音频的播放控件，是浏览器自己自带的，所以不同的浏览器的播放控件是不同定的。
+		autoplay： 当页面加载进入后自动播放音频文件，默认是不自动播放。
+		loop：单曲重复。
+		
+		
+		
+		
+		
+		=-==================================
+		<!DOCTYPE HTML><!--声明文档类型-->
+		<html><!--包含了整个页面内容是页面的根标签，-->
+		<head><!--头部 是不能直接展现给用户的东西，会定义编码格式和引入资源文件-->
+		<title></title><!--标题-->
+		<meta charset="UTF-8"/><!--编码格式-->
+		<link rel="stylesheet" type="text/css" href=""/><!--引入CSS样式-->
+		<script src="" type="text/javascript" charset="utf-8"></script><!--引入JS文件-->
+		</head>
+	<body><!--写的是页面的主题内容-->
+		<div class="">
+			<a href=""></a>
+		</div>
+	</body>
+</html>
+	</body>
+</html>
